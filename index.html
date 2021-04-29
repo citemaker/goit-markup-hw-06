@@ -55,7 +55,7 @@
         <!--  / Шапка сайта -->
     <main>
         <!-- Герой -->
-        <section class="hero">
+        <section class="hero container">
                 <h1 class="title">Эффективные решения<br> для вашего бизнеса</h1>
                 <button type="button" class="btn" data-modal-open>Заказать услугу</button>
     
@@ -413,7 +413,7 @@
                             
                             <label for="mail"></label>
                             <input type="email" name="mail" id="mail" placeholder="E-mail" autofocus />
-                            <button type="sibmit" class="send-button">
+                            <button type="sibmit" class="send-button" data-modal-open>
                                 Подписаться
                             </button>
                         </form>
@@ -428,6 +428,51 @@
         <div class="modal">
             <button type="button" class="modal-button" data-modal-close>
             </button>
+            <!-- Форма модалки -->
+            
+            <form class="modalform js-speaker-form">
+                <h2 class="modalform-title">Оставьте свои данные, мы вам перезвоним</h2>
+            
+                <div class="modalform-field">
+            
+                    <label for="name">Имя</label>
+                    <input type="text" name="name" id="name" placeholder="" autofocus />
+            
+                </div>
+            
+                <div class="modalform-field">
+            
+                    <label for="tel">Телефон</label>
+                    <input type="tel" name="tel" id="tel" placeholder="" />
+            
+                </div>
+            
+                <div class="modalform-field">
+            
+                    <label for="email">Почта</label>
+                    <input type="email" name="mail" id="email" placeholder="" />
+            
+                </div>
+            
+                <div class="modalform-field">
+                    <label for="comment">Коментарий</label>
+            
+                    <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+            
+                </div>
+            
+                <div class="policy">
+            
+                    <input type="checkbox" name="policy" id="policy" />
+                    <label for="policy">Соглашаюсь с рассылкой и принимаю <a class="policy-link" href="">Условия
+                            договора</a></label>
+            
+                </div>
+            
+                <button type="submit">Отправить</button>
+            </form>
+            
+            <!-- // Форма модалки -->
         </div>
     </div>
 
