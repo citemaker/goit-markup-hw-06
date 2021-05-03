@@ -460,14 +460,17 @@
                     <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
             
                 </div>
-            
-                <div class="policy">
-            
-                    <input type="checkbox" name="policy" id="policy" />
-                    <label for="policy">Соглашаюсь с рассылкой и принимаю <a class="policy-link" href="">Условия
-                            договора</a></label>
-            
-                </div>
+            <!-- checkbox -->
+            <label class="check option" for="policy">
+                
+                <input class="check-input" type="checkbox" name="policy" id="policy" checked />
+                <span class="check-box"></span>
+                <span class="check-box-text">
+                    Соглашаюсь с рассылкой и принимаю <a class="policy-link" href="">Условия договора</a>
+                </span>
+                
+            </label>
+            <!-- // checkbox -->
             
                 <button type="submit">Отправить</button>
             </form>
