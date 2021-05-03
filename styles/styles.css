@@ -1020,6 +1020,9 @@ textarea {
 
   outline: 1px solid tomato;
 }
+.modalform-within {
+  background-color: tomato;
+}
 
 .modalform-field {
   display: flex;
@@ -1079,8 +1082,13 @@ textarea {
   line-height: 0.86;
   letter-spacing: 0.01em;
   color: #757575;
+
+  transition-property: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modalform-field:focus input {
+  border-color: #2196f3;
+}
 .policy {
   display: flex;
   flex-direction: row;
@@ -1133,6 +1141,8 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
+  transition-property: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .check-box {
@@ -1156,7 +1166,6 @@ textarea {
 /* focused */
 .check-input:focus + .check-box {
   box-shadow: 0 0 0 2px #2196f3, 0px 4px 4px 0px #00000040;
-  background-color: #2196f3;
 }
 
 .check-box-text {
