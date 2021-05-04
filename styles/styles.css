@@ -220,10 +220,10 @@ img {
   fill: currentColor;
 }
 
-.text.link:hover .icon-evelope,
+/* .text.link:hover .icon-evelope,
 .text.link:hover .icon-smartphone {
   color: var(--accent-color);
-}
+} */
 
 .text.link:focus .icon-evelope,
 .text.link:focus .icon-smartphone {
@@ -843,7 +843,7 @@ img {
   overflow: hidden;
   text-decoration: none;
 
-  transition-property: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card.link:hover,
@@ -1005,7 +1005,7 @@ img {
 }
 
 /* modal */
-/* утилита вверх ее перенести */
+/* утилита */
 textarea {
   resize: none;
 }
@@ -1017,9 +1017,8 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
-
-  outline: 1px solid tomato;
 }
+
 .modalform-within {
   background-color: tomato;
 }
@@ -1031,6 +1030,7 @@ textarea {
 }
 
 .modalform-field label {
+  display: block;
   margin-bottom: 4px;
 }
 
@@ -1083,10 +1083,11 @@ textarea {
   letter-spacing: 0.01em;
   color: #757575;
 
-  transition-property: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition-property: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-.modalform-field:focus input {
+.modalform-field input:focus,
+.modalform-field button:focus {
   border-color: #2196f3;
 }
 .policy {
@@ -1142,7 +1143,7 @@ textarea {
   -moz-appearance: none;
   appearance: none;
 
-  transition-property: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition-property: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .check-box {
@@ -1152,20 +1153,23 @@ textarea {
   margin-top: 3.2px;
   margin-left: -16px;
   border-radius: 1px;
-  box-shadow: 0 0 0 2px #212121, 0px 4px 4px 0px #00000040;
+  box-shadow: 0 0 0 1px #212121, 0px 4px 4px 0px #00000040;
   background-color: #fff;
 }
 
 /* checked */
 .check-input:checked + .check-box {
   background-image: url("../images/check.svg");
-  box-shadow: 0 0 0 2px #2196f3, 0px 4px 4px 0px #00000040;
+  /* box-shadow: 0 0 0 2px #2196f3, 0px 4px 4px 0px #00000040; */
+  box-shadow: 0 0 0 2px #2196f3;
+
   background-color: #2196f3;
 }
 
 /* focused */
 .check-input:focus + .check-box {
-  box-shadow: 0 0 0 2px #2196f3, 0px 4px 4px 0px #00000040;
+  /* box-shadow: 0 0 0 2px #2196f3, 0px 4px 4px 0px #00000040; */
+  box-shadow: 0 0 0 2px #212121;
 }
 
 .check-box-text {
