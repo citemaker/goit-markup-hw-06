@@ -410,11 +410,15 @@
                 <div class="form-footer">
                     <h3 class="features-title light">Подпишитесь на рассылку</h3>
                     <!-- <div class="sign"> -->
-                        <form class="form js-speaker-form">
-                            
-                            <label for="mail"></label>
-                            <input type="email" name="mail" id="mail" placeholder="E-mail" autofocus />
-                            <button type="submit" class="send-button" data-modal-open>
+                        <form class="form js-speaker-form" autocomplete="off">
+                            <input type="email" 
+                            name="mail" 
+                            id="mail" 
+                            placeholder="E-mail" 
+                            autofocus />
+                            <button type="submit" 
+                            class="send-button" 
+                            data-modal-open>
                                 Подписаться
                             </button>
                         </form>
@@ -437,37 +441,64 @@
                 <div class="modalform-field">
             
                     <label for="name">Имя</label>
-                    <input type="text" name="name" id="name" placeholder=""  />
-            
+                    <input 
+                    class="form-input"
+                    type="text" 
+                    name="name" 
+                    id="name" 
+                    placeholder=""  />
+                    <svg class="icon-person">
+                        <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
                 </div>
             
                 <div class="modalform-field">
             
                     <label for="tel">Телефон</label>
-                    <input type="tel" name="tel" id="tel" placeholder="" />
-            
+                    <input class="form-input"
+                    type="tel" 
+                    name="tel" id="tel" 
+                    placeholder="" />
+                    <svg class="icon-phone">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
                 </div>
             
                 <div class="modalform-field">
             
                     <label for="email">Почта</label>
-                    <input type="email" name="mail" id="email" placeholder="" />
-            
+                    <input class="form-input"
+                        type="email" 
+                        name="mail" 
+                        id="email" 
+                        placeholder="" />
+                    <svg class="icon-evelope">
+                        <use href="./images/icons.svg#icon-evelope"></use>
+                    </svg>
                 </div>
             
                 <div class="modalform-field">
                     <label for="comment">Коментарий</label>
             
-                    <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+                    <textarea class="comment" 
+                        name="comment" 
+                        id="comment" 
+                        rows="8" 
+                        placeholder="Введите текст">
+                    </textarea>
             
                 </div>
             <!-- checkbox -->
             <label class="check option" for="policy">
                 
-                <input class="check-input" type="checkbox" name="policy" id="policy" />
+                <input class="check-input form-input" 
+                type="checkbox" 
+                name="policy" 
+                id="policy" />
                 <span class="check-box"></span>
                 <span class="check-box-text">
-                    Соглашаюсь с рассылкой и принимаю <a class="policy-link" href="">Условия договора</a>
+                    Соглашаюсь с рассылкой и принимаю 
+                    <a class="policy-link" href="">Условия договора</a>
                 </span>
                 
             </label>
